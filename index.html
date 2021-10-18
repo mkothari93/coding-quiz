@@ -10,42 +10,26 @@
 <body>
     <header>
         <div class="highScores">View Highscores</div>
-        <div class="timer">Time Left:</div>
+        <div id="timer">Time Left: 90 seconds remaining</div>
     </header>
-    <section>
+    <section id="infoContent">
         <div>
             <h1>Coding Quiz Challenge</h1>
-            <p>Test your knowledge of basic JavaScript with multiple choice questions. Click the Start button to begin the quiz. You will have 90 seconds to complete the quiz. Each incorrect answer will deduct 10 seconds.</p>
-            <br>
-            <p>Good Luck!</p>
-            <br>
+            <p>Test your knowledge of basic JavaScript with multiple choice questions. Click the Start button to begin the quiz.</p>
+            <p>You will have 90 seconds to complete the quiz. Each correct answer will add ten points to your score.</p>
+            <p><span>Good Luck!</span></p>
         </div>
         <div>
-            <button type=button>Start Quiz</button>
+            <button type=button id="btn">Start Quiz</button>
         </div>
     </section>
 
-    <section> 
-        <h3>Question</h3>
-    </section>
-    <section>
-        <div>
-            <ol>
-                <li class="answer-option">
-                    Option 1
-                </li>
-                <li class="answer-option">
-                    Option 2
-                </li>
-                <li class="answer-option">
-                    Option 3
-                </li>
-                <li class="answer-option">
-                    Option 4
-                </li>
-            </ol>
-        </div>
-    </section>
+    <div class="questionContent"> 
+        <h3 class="questionText"></h3>
+    </div>
+    <div class="answerContent">
+        <ol class="answerText"></ol>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
