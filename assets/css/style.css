@@ -7,6 +7,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 
 .highScores, #timer {
@@ -24,6 +25,7 @@ section div {
     font-size: 30px;
     font-weight: bolder;
 }
+
 section h1 {
     border-bottom: 2px solid #f4a261;
     width: 75%;
@@ -46,3 +48,32 @@ section p {
     background-color: #e8f1f2;
     border-radius: 15px;
 }
+
+.quizInfo {
+    display: none;
+    margin: 50px auto;
+}
+
+.quizInfo ul li {
+    display: block;
+    text-decoration: none;
+}
+
+#questionText {
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#btnA, #btnB, #btnC, #btnD {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #497980;
+    background-color: #e8f1f2;
+    border-radius: 10px;
+}
+
+
+
+
