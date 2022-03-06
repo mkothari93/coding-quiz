@@ -40,10 +40,14 @@ section p {
     text-align: center;
 }
 
-#btn {
+.hide {
+    display: none;
+}
+
+.btn {
     margin: 30px;
     padding: 10px 50px;
-    font-size: 25px;
+    font-size: 18px;
     color: #497980;
     background-color: #e8f1f2;
     border-radius: 15px;
@@ -51,7 +55,7 @@ section p {
 
 .quizInfo {
     display: none;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 .quizInfo ul li {
@@ -61,17 +65,8 @@ section p {
 
 #questionText {
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
-}
-
-#btnA, #btnB, #btnC, #btnD {
-    margin: 5px;
-    padding: 10px;
-    font-size: 18px;
-    color: #497980;
-    background-color: #e8f1f2;
-    border-radius: 10px;
 }
 
 

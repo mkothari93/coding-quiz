@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="highScores">View Highscores</div>
-        <div id="timer">Time Left: 90 seconds remaining</div>
+      <div class="highScores" id="highScore">View Highscores</div>
+      <div class="highScores hide" id="score">Score:</div>
+      <div id="timer">Time Left: 90 seconds remaining</div>
     </header>
     <section id="infoContent">
-        <div>
-            <h1>Coding Quiz Challenge</h1>
-            <p>Test your knowledge of basic JavaScript with multiple choice questions. Click the Start button to begin the quiz.</p>
-            <p>You will have 90 seconds to complete the quiz. Each correct answer will add ten points to your score.</p>
-            <p><span>Good Luck!</span></p>
-        </div>
-        <div>
-            <button type=button id="btn">Start Quiz</button>
-        </div>
+      <div>
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Test your knowledge of basic JavaScript with multiple choice
+          questions. Click the Start button to begin the quiz.
+        </p>
+        <p>
+          You will have 90 seconds to complete the quiz. Each correct answer
+          will add ten points to your score.
+        </p>
+        <p><span>Good Luck!</span></p>
+      </div>
+      <div>
+        <button type="button" id="start-btn" class="btn">Start Quiz</button>
+      </div>
     </section>
 
-    <section class="quizInfo" id="quizContent">
-        <div class="questionContent"> 
-            <h3 id="questionText"></h3>
-        </div>
-        <div class="answerContent">
-            <ul>
-                <li><button type=button id="btnA"></button></li>
-                <li><button type=button id="btnB"></button></li>
-                <li><button type=button id="btnC"></button></li>
-                <li><button type=button id="btnD"></button></li>
-            </ul>
-        </div>
+    <section class="quizInfo hide" id="quizContent">
+      <div class="questionContent" id="questionContent">
+        <h3 id="questionText"></h3>
+      </div>
+      <div class="answerContent" id="answerContainer">
+        <ul id="answerContent">
+        </ul>
+        <button type="button" id="next-btn" class="btn hide">Next</button>
+      </div>
+      <div id="correctAnswer"></div>
     </section>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
